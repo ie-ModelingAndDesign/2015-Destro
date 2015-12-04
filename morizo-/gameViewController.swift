@@ -11,7 +11,7 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-    
+    var f = 0
     // 時間計測用の変数(制限時間).
     var cnt : Float = 11
     // count変数.
@@ -25,16 +25,25 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+    
+        var swipeRight = UISwipeGestureRecognizer(target: self, action: "SideSwipeAction:")
         swipeRight.direction = UISwipeGestureRecognizerDirection.Right
         self.view.addGestureRecognizer(swipeRight)
         
-        var swipeDown = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        var swipeLeft = UISwipeGestureRecognizer(target: self, action: "SideSwipeAction:")
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
+        self.view.addGestureRecognizer(swipeLeft)
+        
+        var swipeDown = UISwipeGestureRecognizer(target: self, action: "DownSwipeAction:")
         swipeDown.direction = UISwipeGestureRecognizerDirection.Down
         self.view.addGestureRecognizer(swipeDown)
         
         // 背景色を設定.
         view.backgroundColor = UIColor.whiteColor()
+        let w = UIScreen.mainScreen().bounds.size.width
+        let b = UIImageView(frame: CGRectMake(15, 100, w - 30, 290))
+        b.image = UIImage(named: "before.png")
+        view.addSubview(b)
         
         // touchボタンを作成.
      /* let touchButton: UIButton = UIButton(frame: CGRectMake(0,0,200,70))
@@ -123,17 +132,21 @@ class GameViewController: UIViewController {
     }
     
     
-    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+    func DownSwipeAction(gesture: UIGestureRecognizer) {
         
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             
-            
-            
             switch swipeGesture.direction {
-            case UISwipeGestureRecognizerDirection.Right:
-                print("Swiped right")
             case UISwipeGestureRecognizerDirection.Down:
                 print("Swiped down")
+                
+                //add after.png
+                let w = UIScreen.mainScreen().bounds.size.width
+                let a = UIImageView(frame: CGRectMake(15, 100, w - 30, 300))
+                a.image = UIImage(named: "after.png")
+                view.addSubview(a)
+                
+                if f == 0 {
             count++
                 let str2 = "Score : ".stringByAppendingFormat("%.0f",count)+"パカ"
                 updatecountLabel(count)
@@ -141,10 +154,26 @@ class GameViewController: UIViewController {
             if count >= 0.0 {
                 let count2 = NSUserDefaults.standardUserDefaults()
                 count2.setInteger(Int(count), forKey: "count")
+                    }
+                    f = 1
+                }else{
+                break
                 }
-
+            
+            case UISwipeGestureRecognizerDirection.Right:
+                print("sideswipe")/*
+                let w = UIScreen.mainScreen().bounds.size.width
+                let b = UIImageView(frame: CGRectMake(15, 100, w - 30, 290))
+                b.image = UIImage(named: "before.png")
+                view.addSubview(b)*/
+                
             case UISwipeGestureRecognizerDirection.Left:
-                print("Swiped left")
+                print("sideswipe")/*
+                let w = UIScreen.mainScreen().bounds.size.width
+                let b = UIImageView(frame: CGRectMake(15, 100, w - 30, 290))
+                b.image = UIImage(named: "before.png")
+                view.addSubview(b)*/
+                
             case UISwipeGestureRecognizerDirection.Up:
                 print("Swiped up")
             default:
@@ -152,6 +181,67 @@ class GameViewController: UIViewController {
             }
         }
     }
+    
+    func SideSwipeAction(gesture: UIGestureRecognizer) {
+        
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            
+            switch swipeGesture.direction {
+                
+            case UISwipeGestureRecognizerDirection.Down:
+                print("Swiped down")
+                /*
+                //add after.png
+                let w = UIScreen.mainScreen().bounds.size.width
+                let a = UIImageView(frame: CGRectMake(15, 100, w - 30, 300))
+                a.image = UIImage(named: "after.png")
+                view.addSubview(a)
+                
+                if f == 0 {
+                    count++
+                    let str2 = "Score : ".stringByAppendingFormat("%.0f",count)+"パカ"
+                    updatecountLabel(count)
+                    countLabel.text = str2
+                    if count >= 0.0 {
+                        let count2 = NSUserDefaults.standardUserDefaults()
+                        count2.setInteger(Int(count), forKey: "count")
+                    }
+                    f = 1
+                }else{
+                    break
+                }*/
+                
+            case UISwipeGestureRecognizerDirection.Right:
+                print("sideswipe")
+                let w = UIScreen.mainScreen().bounds.size.width
+                let b = UIImageView(frame: CGRectMake(15, 100, w - 30, 290))
+                b.image = UIImage(named: "before.png")
+                view.addSubview(b)
+                
+                if f == 1{
+                    f = 0
+                }
+                
+            case UISwipeGestureRecognizerDirection.Left:
+                print("sideswipe")
+                let w = UIScreen.mainScreen().bounds.size.width
+                let b = UIImageView(frame: CGRectMake(15, 100, w - 30, 290))
+                b.image = UIImage(named: "before.png")
+                view.addSubview(b)
+                
+                if f == 1{
+                    f = 0
+                }
+                
+            case UISwipeGestureRecognizerDirection.Up:
+                print("Swiped up")
+            default:
+                break
+            }
+        }
+    }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
