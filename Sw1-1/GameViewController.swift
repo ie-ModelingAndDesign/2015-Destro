@@ -21,6 +21,8 @@ class GameViewController: UIViewController {
     var cnt : Float = 11
     // 偏移関数
     var h = 0
+    // 効果音
+    var k = 0
     // count変数.
     var count : Float = 0.0
     // 動作変数
@@ -172,7 +174,10 @@ class GameViewController: UIViewController {
             switch swipeGesture.direction {
                 
             case UISwipeGestureRecognizerDirection.Down:
+                if(k == 0){
                 efectplayer.play()
+                    k=1
+                }
                 print("Swiped down")
                 let b = UIImageView(frame: CGRectMake(15, 200, 350, 250))
                 b.image = UIImage(named: "after.png")
@@ -202,6 +207,7 @@ class GameViewController: UIViewController {
             switch swipeGesture.direction {
                 
             case UISwipeGestureRecognizerDirection.Right:
+                k=0
                 efectplayer.stop()
                 print("Swiped right")
                 let a = UIImageView(frame: CGRectMake(15, 200, 350, 250))
@@ -212,6 +218,7 @@ class GameViewController: UIViewController {
                 }
                 
             case UISwipeGestureRecognizerDirection.Left:
+                k=0
                 efectplayer.stop()
                 print("Swiped left")
                 let a = UIImageView(frame: CGRectMake(15, 200, 350, 250))
