@@ -28,15 +28,19 @@ class TopViewController: UIViewController{
             print("Music stop")
         }
         
-        
-        let background : UIImage = UIImage(named: "wall.png")!
-        let backgroundView: UIImageView = UIImageView()
-        backgroundView.image = background
-        backgroundView.frame = CGRectMake(self.view.bounds.width/2-background.size.width/2+90, self.view.bounds.height/2-background.size.height/2, background.size.width, background.size.height)
-        self.view.addSubview(backgroundView)
-        
         // 背景色を設定.
         view.backgroundColor = UIColor.whiteColor()
+        
+        
+        //背景に画像を挿入
+        let myImage: UIImage = UIImage(named: "apple.png")!
+        let myImageView: UIImageView = UIImageView()
+        //let width = self.myImage!.size.width
+        myImageView.image = myImage
+        myImageView.frame = CGRectMake(self.view.bounds.width/2-myImage.size.width/3, self.view.bounds.height/2-myImage.size.height/3-150, myImage.size.width/2+55, myImage.size.height/2+60)
+            self.view.addSubview(myImageView)
+        
+        
         // 文字を書く為のlabelを作成
         let titleLabel: UILabel = UILabel(frame: CGRectMake(0,0,500,500))
         // 入力する文字を書く
@@ -74,16 +78,27 @@ class TopViewController: UIViewController{
         self.view.addSubview(destroLabel)
         
         
-        // Startボタンを作成.
-        let startButton: UIButton = UIButton(frame: CGRectMake(0,0,400,900))
-        //startButton.backgroundColor = UIColor.redColor();
-        startButton.layer.masksToBounds = true
-        //startButton.setTitle("START", forState: .Normal)
-        //startButton.titleLabel?.font = UIFont(name:"PAPERWORKDots",size:20)
-        startButton.layer.cornerRadius = 20.0
+//        // Startボタンを作成.
+//        let startButton: UIButton = UIButton(frame: CGRectMake(0,0,400,900))
+//        //startButton.backgroundColor = UIColor.redColor();
+//        startButton.layer.masksToBounds = true
+//        //startButton.setTitle("START", forState: .Normal)
+//        //startButton.titleLabel?.font = UIFont(name:"PAPERWORKDots",size:20)
+//        startButton.layer.cornerRadius = 20.0
+//        startButton.layer.position = CGPoint(x: self.view.bounds.width/2 , y:self.view.bounds.height-200)
+//        startButton.addTarget(self, action: "onClickStartButton:", forControlEvents: .TouchUpInside)
+//        self.view.addSubview(startButton);
+        
+        //りんごボタン
+        let startButton: UIButton = UIButton(frame: CGRectMake(0,0,130,140))
+        var buttonImage:UIImage = UIImage(named: "apple.png")!;
+        startButton.setTitle("START", forState: UIControlState.Normal);
+        startButton.titleLabel?.font = UIFont(name:"PAPERWORKBlack",size:30);
+        startButton.setBackgroundImage(buttonImage, forState: UIControlState.Normal);
+        startButton.addTarget(self, action: "onClickStartButton:", forControlEvents: .TouchUpInside)//*
         startButton.layer.position = CGPoint(x: self.view.bounds.width/2 , y:self.view.bounds.height-200)
-        startButton.addTarget(self, action: "onClickStartButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(startButton);
+
     }
     
     

@@ -54,11 +54,12 @@ class ScoreViewController: UIViewController {
         self.view.addSubview(ScoreLabel)
         
         // TOPボタンを作成.
-        let topButton: UIButton = UIButton(frame: CGRectMake(0,0,90,30))
+        let topButton: UIButton = UIButton(frame: CGRectMake(0,0,100,45))
         topButton.backgroundColor = UIColor.redColor();
         topButton.layer.masksToBounds = true
         topButton.setTitle("TOP", forState: .Normal)
-        topButton.layer.cornerRadius = 0.0
+        topButton.titleLabel?.font = UIFont(name:"PAPERWORKBlack",size:30);
+        topButton.layer.cornerRadius = 23.0
         topButton.layer.position = CGPoint(x: self.view.bounds.width*1/5 , y:self.view.bounds.height*1/10)
         topButton.addTarget(self, action: "onClickTopButton:", forControlEvents: .TouchUpInside)
         topButton.tag = 1
@@ -69,6 +70,7 @@ class ScoreViewController: UIViewController {
         replayButton.backgroundColor = UIColor.redColor();
         replayButton.layer.masksToBounds = true
         replayButton.setTitle("REPLAY", forState: .Normal)
+        replayButton.titleLabel?.font = UIFont(name:"PAPERWORKBlack",size:45);
         replayButton.layer.cornerRadius = 20.0
         replayButton.layer.position = CGPoint(x: self.view.bounds.width/2 , y:self.view.bounds.height-200)
         replayButton.addTarget(self, action: "onClickReplayButton:", forControlEvents: .TouchUpInside)
