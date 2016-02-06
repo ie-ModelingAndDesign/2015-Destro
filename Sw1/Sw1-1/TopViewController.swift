@@ -50,7 +50,7 @@ class TopViewController: UIViewController{
         titleLabel.font = UIFont(name:"PAPERWORKBlack",size:80)
         // 文字の色を白にする.
         titleLabel.textColor = UIColor.blackColor()
-        // 文字の影の色を白にする.
+        // 文字の影の色をグレーにする.
         titleLabel.shadowColor = UIColor.whiteColor()
         // Textを中央寄せにする.
         titleLabel.textAlignment = NSTextAlignment.Center
@@ -66,9 +66,9 @@ class TopViewController: UIViewController{
         // 文字の大きさを指定する
         //destroLabel.font = UIFont.systemFontOfSize(CGFloat(30))
         destroLabel.font = UIFont(name:"PAPERWORKBlack",size:30)
-        // 文字の色を黒にする.
+        // 文字の色を白にする.
         destroLabel.textColor = UIColor.blackColor()
-        // 文字の影の色を白にする.
+        // 文字の影の色をグレーにする.
         destroLabel.shadowColor = UIColor.whiteColor()
         // Textを中央寄せにする.
         destroLabel.textAlignment = NSTextAlignment.Center
