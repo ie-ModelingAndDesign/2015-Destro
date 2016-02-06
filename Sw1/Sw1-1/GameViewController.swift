@@ -75,9 +75,9 @@ class GameViewController: UIViewController {
         // 背景色を設定.
         view.backgroundColor = UIColor.whiteColor()
         
-        let i = UIImageView(frame: CGRectMake(15, 200, 350, 250))
-        i.image = UIImage(named: "before.png")
-        view.addSubview(i)
+ //       let i = UIImageView(frame: CGRectMake(15, 200, 350, 250))
+ //       i.image = UIImage(named: "背景なし.png")
+ //       view.addSubview(i)
         
         // touchボタンを作成.
         let endButton: UIButton = UIButton(frame: CGRectMake(0,0,100,35))
@@ -93,9 +93,8 @@ class GameViewController: UIViewController {
         countLabel = UILabel(frame: CGRectMake(0,0,200,50))
         countLabel.layer.masksToBounds = true
         countLabel.layer.cornerRadius = 0.0
-        countLabel.text = "Score : ".stringByAppendingFormat("%.0f",count)+"Paca"
+        countLabel.text = "Score : ".stringByAppendingFormat("%.0f",count)+"パカ"
         countLabel.textColor = UIColor.blackColor()
-        countLabel.font = UIFont(name:"PAPERWORKBlack",size:30)
         countLabel.shadowColor = UIColor.grayColor()
         countLabel.textAlignment = NSTextAlignment.Center
         countLabel.layer.position = CGPoint(x: self.view.bounds.width*3/4,y:self.view.bounds.height*1/8)
@@ -107,7 +106,6 @@ class GameViewController: UIViewController {
         timerLabel.layer.cornerRadius = 20.0
         timerLabel.text = "\(cnt)"
         timerLabel.textColor = UIColor.blackColor()
-        timerLabel.font = UIFont(name:"PAPERWORKBlack",size:30)
         timerLabel.shadowColor = UIColor.grayColor()
         timerLabel.textAlignment = NSTextAlignment.Center
         timerLabel.layer.position = CGPoint(x: self.view.bounds.width*1/4,y:self.view.bounds.height*1/8)
@@ -127,7 +125,7 @@ class GameViewController: UIViewController {
     // countの設定.
     func onClickMyBottun(sender: UIButton){
         count++
-        let str2 = "Score : ".stringByAppendingFormat("%.0f",count)+"Paca"
+        let str2 = "Score : ".stringByAppendingFormat("%.0f",count)+"パカ"
         updatecountLabel(count)
         countLabel.text = str2
         if count >= 0.0 {
@@ -182,12 +180,12 @@ class GameViewController: UIViewController {
                 }
                 print("Swiped down")
                 let b = UIImageView(frame: CGRectMake(15, 200, 350, 250))
-                b.image = UIImage(named: "after.png")
+                b.image = UIImage(named: "mac_after.jpg")
                 view.addSubview(b)
                 if f == 0 {
                     count++
                     f = 1
-                    let str2 = "Score : ".stringByAppendingFormat("%.0f",count)+"Paca"
+                    let str2 = "Score : ".stringByAppendingFormat("%.0f",count)+"パカ"
                     updatecountLabel(count)
                     countLabel.text = str2
                     if count >= 0.0 {
@@ -213,22 +211,22 @@ class GameViewController: UIViewController {
                 efectplayer.stop()
                 print("Swiped right")
                 let a = UIImageView(frame: CGRectMake(15, 200, 350, 250))
-                a.image = UIImage(named: "before.png")
+                a.image = UIImage(named: "背景なし.png")
                 view.addSubview(a)
                 if f == 1{
                     f = 0
                 }
                 
-            case UISwipeGestureRecognizerDirection.Left:
-                k=0
-                efectplayer.stop()
-                print("Swiped left")
-                let a = UIImageView(frame: CGRectMake(15, 200, 350, 250))
-                a.image = UIImage(named: "before.png")
-                view.addSubview(a)
-                if f == 1{
-                    f = 0
-                }
+    //        case UISwipeGestureRecognizerDirection.Left:
+    //            k=0
+    //            efectplayer.stop()
+    //            print("Swiped left")
+    //            let a = UIImageView(frame: CGRectMake(15, 200, 350, 250))
+    //            a.image = UIImage(named: "背景なし.png")
+     //           view.addSubview(a)
+     //           if f == 1{
+    //                f = 0
+    //            }
                 
             case UISwipeGestureRecognizerDirection.Up:
                 print("Swiped up")
