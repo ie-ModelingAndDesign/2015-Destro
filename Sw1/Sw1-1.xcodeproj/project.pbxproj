@@ -287,11 +287,25 @@
 			files = (
 				2F53228B1C5B7561003B0A68 /* after.png in Resources */,
 				2FF9E4F31C1AC36600B3900F /* GAME.mp3 in Resources */,
+<<<<<<< Updated upstream
 				2F1475791C59153C005CD232 /* kick1.mp3 in Resources */,
 				2FADB4051BFA07AB00675914 /* LaunchScreen.storyboard in Resources */,
+=======
+				2F5322AE1C5B774F003B0A68 /* wall.png in Resources */,
+				2F5322A71C5B774F003B0A68 /* Motorless-Specimen.pdf in Resources */,
+				2F1475791C59153C005CD232 /* kick1.mp3 in Resources */,
+				2FADB4051BFA07AB00675914 /* LaunchScreen.storyboard in Resources */,
+				2F5322A21C5B774F003B0A68 /*  kabe.png in Resources */,
+				2F5322A41C5B774F003B0A68 /* Motorless-Default.ttf in Resources */,
+				2F5322AD1C5B774F003B0A68 /* read me.txt in Resources */,
+>>>>>>> Stashed changes
 				2F5322A91C5B774F003B0A68 /* PAPERWORK-Black.otf in Resources */,
 				2F5322921C5B7694003B0A68 /* Icon.png in Resources */,
 				2F5322AC1C5B774F003B0A68 /* PAPERWORK-Striped.otf in Resources */,
+<<<<<<< Updated upstream
+=======
+				2F5322A61C5B774F003B0A68 /* Motorless-Hammered.ttf in Resources */,
+>>>>>>> Stashed changes
 				2F5322AB1C5B774F003B0A68 /* PAPERWORK-Outline.otf in Resources */,
 				2FF9E4F11C1AC36600B3900F /* BGM.mp3 in Resources */,
 				2F53228F1C5B7577003B0A68 /* apple.png in Resources */,
