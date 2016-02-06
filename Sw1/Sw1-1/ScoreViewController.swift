@@ -39,9 +39,10 @@ class ScoreViewController: UIViewController {
         // 文字を書く為のlabelを作成
         let ScoreLabel: UILabel = UILabel(frame: CGRectMake(0,0,200,150))
         // 入力する文字を書く
-        ScoreLabel.text = "\(score)パカ"
+        ScoreLabel.text = "\(score) Paca"
+        
         // 文字の大きさを指定する
-        ScoreLabel.font = UIFont.systemFontOfSize(CGFloat(40))
+        ScoreLabel.font = UIFont(name:"PAPERWORKBlack",size:60)
         // 文字の色を白にする.
         ScoreLabel.textColor = UIColor.blackColor()
         // 文字の影の色をグレーにする.
