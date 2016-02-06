@@ -93,8 +93,9 @@ class GameViewController: UIViewController {
         countLabel = UILabel(frame: CGRectMake(0,0,200,50))
         countLabel.layer.masksToBounds = true
         countLabel.layer.cornerRadius = 0.0
-        countLabel.text = "Score : ".stringByAppendingFormat("%.0f",count)+"パカ"
+        countLabel.text = "Score : ".stringByAppendingFormat("%.0f",count)+"Paca"
         countLabel.textColor = UIColor.blackColor()
+        countLabel.font = UIFont(name:"PAPERWORKBlack",size:30)
         countLabel.shadowColor = UIColor.grayColor()
         countLabel.textAlignment = NSTextAlignment.Center
         countLabel.layer.position = CGPoint(x: self.view.bounds.width*3/4,y:self.view.bounds.height*1/8)
@@ -106,6 +107,7 @@ class GameViewController: UIViewController {
         timerLabel.layer.cornerRadius = 20.0
         timerLabel.text = "\(cnt)"
         timerLabel.textColor = UIColor.blackColor()
+        timerLabel.font = UIFont(name:"PAPERWORKBlack",size:30)
         timerLabel.shadowColor = UIColor.grayColor()
         timerLabel.textAlignment = NSTextAlignment.Center
         timerLabel.layer.position = CGPoint(x: self.view.bounds.width*1/4,y:self.view.bounds.height*1/8)
@@ -125,7 +127,7 @@ class GameViewController: UIViewController {
     // countの設定.
     func onClickMyBottun(sender: UIButton){
         count++
-        let str2 = "Score : ".stringByAppendingFormat("%.0f",count)+"パカ"
+        let str2 = "Score : ".stringByAppendingFormat("%.0f",count)+"Paca"
         updatecountLabel(count)
         countLabel.text = str2
         if count >= 0.0 {
@@ -185,7 +187,7 @@ class GameViewController: UIViewController {
                 if f == 0 {
                     count++
                     f = 1
-                    let str2 = "Score : ".stringByAppendingFormat("%.0f",count)+"パカ"
+                    let str2 = "Score : ".stringByAppendingFormat("%.0f",count)+"Paca"
                     updatecountLabel(count)
                     countLabel.text = str2
                     if count >= 0.0 {
