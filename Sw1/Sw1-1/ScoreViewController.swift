@@ -39,6 +39,7 @@ class ScoreViewController: UIViewController {
         // 文字を書く為のlabelを作成
         let ScoreLabel: UILabel = UILabel(frame: CGRectMake(0,0,200,150))
         // 入力する文字を書く
+        ScoreLabel.font = UIFont(name:"851CHIKARA-DZUYOKU",size:20)
         ScoreLabel.text = "\(score)パカ"
         // 文字の大きさを指定する
         ScoreLabel.font = UIFont.systemFontOfSize(CGFloat(40))
