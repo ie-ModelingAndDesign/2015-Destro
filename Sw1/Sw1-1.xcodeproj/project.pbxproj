@@ -32,6 +32,7 @@
 		A020654D1C65DBDA006336D1 /* pc2.eps in Resources */ = {isa = PBXBuildFile; fileRef = A020654C1C65DBDA006336D1 /* pc2.eps */; };
 		A020654F1C65E45C006336D1 /* 背景なし.png in Resources */ = {isa = PBXBuildFile; fileRef = A020654E1C65E45C006336D1 /* 背景なし.png */; };
 		A02065511C65E509006336D1 /* mac_after.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A02065501C65E509006336D1 /* mac_after.jpg */; };
+		EC324E581C66F5D6008CD2B5 /* 851CHIKARA-DZUYOKU.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC324E571C66F5D6008CD2B5 /* 851CHIKARA-DZUYOKU.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		A020654C1C65DBDA006336D1 /* pc2.eps */ = {isa = PBXFileReference; lastKnownFileType = file; path = pc2.eps; sourceTree = "<group>"; };
 		A020654E1C65E45C006336D1 /* 背景なし.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景なし.png"; sourceTree = "<group>"; };
 		A02065501C65E509006336D1 /* mac_after.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mac_after.jpg; sourceTree = "<group>"; };
+		EC324E571C66F5D6008CD2B5 /* 851CHIKARA-DZUYOKU.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "851CHIKARA-DZUYOKU.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				2FEA6CB31BFAD83F00AB95A0 /* TopViewController.swift */,
 				2F9FDCC51BFA24DF0026DFBD /* GameViewController.swift */,
 				2F67F2B61BFAD398004A0A95 /* ScoreViewController.swift */,
+				EC324E571C66F5D6008CD2B5 /* 851CHIKARA-DZUYOKU.ttf */,
 				2F5322911C5B7694003B0A68 /* Icon.png */,
 				2F53228D1C5B7577003B0A68 /* apple.png */,
 				2F53228E1C5B7577003B0A68 /* wall.png */,
@@ -301,6 +304,7 @@
 				A020654D1C65DBDA006336D1 /* pc2.eps in Resources */,
 				2F5322A91C5B774F003B0A68 /* PAPERWORK-Black.otf in Resources */,
 				2F5322921C5B7694003B0A68 /* Icon.png in Resources */,
+				EC324E581C66F5D6008CD2B5 /* 851CHIKARA-DZUYOKU.ttf in Resources */,
 				2F5322AC1C5B774F003B0A68 /* PAPERWORK-Striped.otf in Resources */,
 				2F5322AB1C5B774F003B0A68 /* PAPERWORK-Outline.otf in Resources */,
 				2FF9E4F11C1AC36600B3900F /* BGM.mp3 in Resources */,

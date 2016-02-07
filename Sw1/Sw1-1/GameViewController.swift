@@ -10,6 +10,7 @@
 import UIKit
 import AVFoundation
 
+
 class GameViewController: UIViewController {
     
     // game画面BGM
@@ -32,6 +33,8 @@ class GameViewController: UIViewController {
     var countLabel : UILabel!
     // タイマー設定.
     var time : NSTimer!
+    
+    var font:UIFont!
     
     
     override func viewDidLoad() {
@@ -93,6 +96,9 @@ class GameViewController: UIViewController {
         countLabel = UILabel(frame: CGRectMake(0,0,200,50))
         countLabel.layer.masksToBounds = true
         countLabel.layer.cornerRadius = 0.0
+        
+        countLabel.font = UIFont(name:"851CHIKARA-DZUYOKU",size:20)
+        
         countLabel.text = "Score : ".stringByAppendingFormat("%.0f",count)+"パカ"
         countLabel.textColor = UIColor.blackColor()
         countLabel.shadowColor = UIColor.grayColor()

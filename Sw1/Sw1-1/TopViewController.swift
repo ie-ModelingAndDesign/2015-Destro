@@ -46,7 +46,6 @@ class TopViewController: UIViewController{
         // 入力する文字を書く
         titleLabel.text = "Mac Snap!!"
         // 文字の大きさを指定する
-        //titleLabel.font = UIFont.systemFontOfSize(CGFloat(50))
         titleLabel.font = UIFont(name:"PAPERWORKBlack",size:80)
         // 文字の色を白にする.
         titleLabel.textColor = UIColor.blackColor()
