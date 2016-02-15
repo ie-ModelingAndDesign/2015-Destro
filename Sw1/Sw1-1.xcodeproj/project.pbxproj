@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2F1475791C59153C005CD232 /* kick1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2F1475701C59153C005CD232 /* kick1.mp3 */; };
 		2F53228B1C5B7561003B0A68 /* after.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5322891C5B7561003B0A68 /* after.png */; };
-		2F53228C1C5B7561003B0A68 /* before.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F53228A1C5B7561003B0A68 /* before.png */; };
 		2F53228F1C5B7577003B0A68 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F53228D1C5B7577003B0A68 /* apple.png */; };
 		2F5322901C5B7577003B0A68 /* wall.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F53228E1C5B7577003B0A68 /* wall.png */; };
 		2F5322921C5B7694003B0A68 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5322911C5B7694003B0A68 /* Icon.png */; };
@@ -29,9 +28,9 @@
 		2FF9E4F11C1AC36600B3900F /* BGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2FF9E4EE1C1AC36600B3900F /* BGM.mp3 */; };
 		2FF9E4F21C1AC36600B3900F /* CLEAR.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2FF9E4EF1C1AC36600B3900F /* CLEAR.mp3 */; };
 		2FF9E4F31C1AC36600B3900F /* GAME.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2FF9E4F01C1AC36600B3900F /* GAME.mp3 */; };
+		603D3FDB1C71ADAD0086E680 /* before.png in Resources */ = {isa = PBXBuildFile; fileRef = 603D3FDA1C71ADAD0086E680 /* before.png */; };
+		603D3FDD1C71ADC70086E680 /* mac_after.png in Resources */ = {isa = PBXBuildFile; fileRef = 603D3FDC1C71ADC70086E680 /* mac_after.png */; };
 		A020654D1C65DBDA006336D1 /* pc2.eps in Resources */ = {isa = PBXBuildFile; fileRef = A020654C1C65DBDA006336D1 /* pc2.eps */; };
-		A020654F1C65E45C006336D1 /* 背景なし.png in Resources */ = {isa = PBXBuildFile; fileRef = A020654E1C65E45C006336D1 /* 背景なし.png */; };
-		A02065511C65E509006336D1 /* mac_after.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A02065501C65E509006336D1 /* mac_after.jpg */; };
 		EC324E581C66F5D6008CD2B5 /* 851CHIKARA-DZUYOKU.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC324E571C66F5D6008CD2B5 /* 851CHIKARA-DZUYOKU.ttf */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +54,6 @@
 /* Begin PBXFileReference section */
 		2F1475701C59153C005CD232 /* kick1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kick1.mp3; sourceTree = "<group>"; };
 		2F5322891C5B7561003B0A68 /* after.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = after.png; sourceTree = "<group>"; };
-		2F53228A1C5B7561003B0A68 /* before.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = before.png; sourceTree = "<group>"; };
 		2F53228D1C5B7577003B0A68 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
 		2F53228E1C5B7577003B0A68 /* wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wall.png; sourceTree = "<group>"; };
 		2F5322911C5B7694003B0A68 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -81,9 +79,9 @@
 		2FF9E4EE1C1AC36600B3900F /* BGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BGM.mp3; sourceTree = "<group>"; };
 		2FF9E4EF1C1AC36600B3900F /* CLEAR.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CLEAR.mp3; sourceTree = "<group>"; };
 		2FF9E4F01C1AC36600B3900F /* GAME.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GAME.mp3; sourceTree = "<group>"; };
+		603D3FDA1C71ADAD0086E680 /* before.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = before.png; sourceTree = "<group>"; };
+		603D3FDC1C71ADC70086E680 /* mac_after.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mac_after.png; sourceTree = "<group>"; };
 		A020654C1C65DBDA006336D1 /* pc2.eps */ = {isa = PBXFileReference; lastKnownFileType = file; path = pc2.eps; sourceTree = "<group>"; };
-		A020654E1C65E45C006336D1 /* 背景なし.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景なし.png"; sourceTree = "<group>"; };
-		A02065501C65E509006336D1 /* mac_after.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mac_after.jpg; sourceTree = "<group>"; };
 		EC324E571C66F5D6008CD2B5 /* 851CHIKARA-DZUYOKU.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "851CHIKARA-DZUYOKU.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,10 +154,9 @@
 				2F53228D1C5B7577003B0A68 /* apple.png */,
 				2F53228E1C5B7577003B0A68 /* wall.png */,
 				2F5322891C5B7561003B0A68 /* after.png */,
-				A020654E1C65E45C006336D1 /* 背景なし.png */,
 				2F1475701C59153C005CD232 /* kick1.mp3 */,
-				2F53228A1C5B7561003B0A68 /* before.png */,
-				A02065501C65E509006336D1 /* mac_after.jpg */,
+				603D3FDA1C71ADAD0086E680 /* before.png */,
+				603D3FDC1C71ADC70086E680 /* mac_after.png */,
 				2FF9E4EE1C1AC36600B3900F /* BGM.mp3 */,
 				A020654C1C65DBDA006336D1 /* pc2.eps */,
 				2FF9E4EF1C1AC36600B3900F /* CLEAR.mp3 */,
@@ -302,17 +299,16 @@
 				2F1475791C59153C005CD232 /* kick1.mp3 in Resources */,
 				2FADB4051BFA07AB00675914 /* LaunchScreen.storyboard in Resources */,
 				A020654D1C65DBDA006336D1 /* pc2.eps in Resources */,
+				603D3FDD1C71ADC70086E680 /* mac_after.png in Resources */,
 				2F5322A91C5B774F003B0A68 /* PAPERWORK-Black.otf in Resources */,
 				2F5322921C5B7694003B0A68 /* Icon.png in Resources */,
 				EC324E581C66F5D6008CD2B5 /* 851CHIKARA-DZUYOKU.ttf in Resources */,
 				2F5322AC1C5B774F003B0A68 /* PAPERWORK-Striped.otf in Resources */,
 				2F5322AB1C5B774F003B0A68 /* PAPERWORK-Outline.otf in Resources */,
 				2FF9E4F11C1AC36600B3900F /* BGM.mp3 in Resources */,
+				603D3FDB1C71ADAD0086E680 /* before.png in Resources */,
 				2F53228F1C5B7577003B0A68 /* apple.png in Resources */,
 				2FF9E4F21C1AC36600B3900F /* CLEAR.mp3 in Resources */,
-				A02065511C65E509006336D1 /* mac_after.jpg in Resources */,
-				2F53228C1C5B7561003B0A68 /* before.png in Resources */,
-				A020654F1C65E45C006336D1 /* 背景なし.png in Resources */,
 				2FADB4021BFA07AB00675914 /* Assets.xcassets in Resources */,
 				2F5322AA1C5B774F003B0A68 /* PAPERWORK-Dots.otf in Resources */,
 				2FADB4001BFA07AB00675914 /* Main.storyboard in Resources */,
