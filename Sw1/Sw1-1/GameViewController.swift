@@ -78,6 +78,10 @@ class GameViewController: UIViewController {
         // 背景色を設定.
         view.backgroundColor = UIColor.whiteColor()
         
+        let a = UIImageView(frame: CGRectMake(15, 200, 350, 250))
+        a.image = UIImage(named: "before.png")
+        view.addSubview(a)
+        
  //       let i = UIImageView(frame: CGRectMake(15, 200, 350, 250))
  //       i.image = UIImage(named: "背景なし.png")
  //       view.addSubview(i)
@@ -186,7 +190,7 @@ class GameViewController: UIViewController {
                 }
                 print("Swiped down")
                 let b = UIImageView(frame: CGRectMake(15, 200, 350, 250))
-                b.image = UIImage(named: "mac_after.jpg")
+                b.image = UIImage(named: "mac_after.png")
                 view.addSubview(b)
                 if f == 0 {
                     count++
@@ -217,7 +221,7 @@ class GameViewController: UIViewController {
                 efectplayer.stop()
                 print("Swiped right")
                 let a = UIImageView(frame: CGRectMake(15, 200, 350, 250))
-                a.image = UIImage(named: "背景なし.png")
+                a.image = UIImage(named: "before.png")
                 view.addSubview(a)
                 if f == 1{
                     f = 0
