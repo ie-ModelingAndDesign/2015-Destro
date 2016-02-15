@@ -82,16 +82,17 @@ class GameViewController: UIViewController {
         a.image = UIImage(named: "before.png")
         view.addSubview(a)
         
- //       let i = UIImageView(frame: CGRectMake(15, 200, 350, 250))
- //       i.image = UIImage(named: "背景なし.png")
- //       view.addSubview(i)
+        //       let i = UIImageView(frame: CGRectMake(15, 200, 350, 250))
+        //       i.image = UIImage(named: "背景なし.png")
+        //       view.addSubview(i)
         
         // touchボタンを作成.
-        let endButton: UIButton = UIButton(frame: CGRectMake(0,0,100,35))
+        let endButton: UIButton = UIButton(frame: CGRectMake(0,0,200,70))
         endButton.backgroundColor = UIColor.blueColor();
         endButton.layer.masksToBounds = true
+        endButton.layer.cornerRadius = 20
         endButton.setTitle("END", forState: .Normal)
-        endButton.layer.cornerRadius = 0.0
+        endButton.titleLabel?.font = UIFont(name:"PAPERWORKBlack",size:40);
         endButton.layer.position = CGPoint(x: self.view.bounds.width/2 , y:self.view.bounds.height-100)
         endButton.addTarget(self, action: "onClickEndButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(endButton);
@@ -100,9 +101,6 @@ class GameViewController: UIViewController {
         countLabel = UILabel(frame: CGRectMake(0,0,200,50))
         countLabel.layer.masksToBounds = true
         countLabel.layer.cornerRadius = 0.0
-        
-        countLabel.font = UIFont(name:"851CHIKARA-DZUYOKU",size:20)
-        
         countLabel.text = "Score : ".stringByAppendingFormat("%.0f",count)+"パカ"
         countLabel.textColor = UIColor.blackColor()
         countLabel.shadowColor = UIColor.grayColor()
@@ -166,7 +164,7 @@ class GameViewController: UIViewController {
             }
         }
     }
-        
+    
     
     
     // NSTimerIntervalで指定された秒数毎に呼び出されるメソッド.
@@ -185,7 +183,7 @@ class GameViewController: UIViewController {
                 
             case UISwipeGestureRecognizerDirection.Down:
                 if(k == 0){
-                efectplayer.play()
+                    efectplayer.play()
                     k=1
                 }
                 print("Swiped down")
@@ -205,7 +203,7 @@ class GameViewController: UIViewController {
                 }else{
                     break
                 }
-                default:
+            default:
                 break
             }
         }
@@ -227,16 +225,16 @@ class GameViewController: UIViewController {
                     f = 0
                 }
                 
-    //        case UISwipeGestureRecognizerDirection.Left:
-    //            k=0
-    //            efectplayer.stop()
-    //            print("Swiped left")
-    //            let a = UIImageView(frame: CGRectMake(15, 200, 350, 250))
-    //            a.image = UIImage(named: "背景なし.png")
-     //           view.addSubview(a)
-     //           if f == 1{
-    //                f = 0
-    //            }
+                //        case UISwipeGestureRecognizerDirection.Left:
+                //            k=0
+                //            efectplayer.stop()
+                //            print("Swiped left")
+                //            let a = UIImageView(frame: CGRectMake(15, 200, 350, 250))
+                //            a.image = UIImage(named: "背景なし.png")
+                //           view.addSubview(a)
+                //           if f == 1{
+                //                f = 0
+                //            }
                 
             case UISwipeGestureRecognizerDirection.Up:
                 print("Swiped up")
